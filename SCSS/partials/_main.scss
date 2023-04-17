@@ -3,3 +3,11 @@ main {
     height: 100vh;
     background-color: $colorSecundario;
 }
+
+.carousel {
+    height: 45vh;
+}
+
+.carousel-item img {
+    max-height: 500px;
+}

@@ -6,10 +6,19 @@ header {
   padding: 10px;
   margin-left: 70px; }
 
+.nav {
+  height: 10px; }
+
 main {
   width: 100%;
   height: 100vh;
   background-color: #241B35; }
+
+.carousel {
+  height: 45vh; }
+
+.carousel-item img {
+  max-height: 500px; }
 
 aside {
   color: white;
