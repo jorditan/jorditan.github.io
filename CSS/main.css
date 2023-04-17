@@ -1,31 +1,70 @@
 header {
-  width: 100%;
-  background-color: #8956F1; }
+  width: 100%; }
 
 .nav-item {
-  padding: 10px;
-  margin-left: 70px; }
+  margin-left: 30px;
+  transition: font-size 2s, background-color 2s; }
 
-.nav {
-  height: 10px; }
+.nav-item.nav-item:hover {
+  background-color: #241B35;
+  font-size: 20px; }
+
+.navbar {
+  background-color: #8956F1;
+  z-index: 1000;
+  top: 0;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5); }
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh; }
 
 main {
+  float: left;
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: #241B35; }
 
 .carousel {
   height: 45vh; }
 
 .carousel-item img {
-  max-height: 500px; }
+  max-height: 500px;
+  background-size: contain; }
 
 aside {
   color: white;
   float: right;
   width: 50%;
-  margin-top: 50px; }
+  margin-top: 50px;
+  background-color: #241B35; }
 
 .widget {
+  display: flex;
+  flex-wrap: wrap; }
+
+.columnaIzquierda {
+  flex: 1; }
+
+.columnaDerecha {
+  flex: 1; }
+
+.card {
+  width: 200px;
+  height: 100px;
+  background-color: #CB80FF;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.card img {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+  text-align: center; }
+
+.productosDestacados {
   display: flex;
   justify-content: center; }

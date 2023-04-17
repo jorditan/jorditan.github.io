@@ -3,9 +3,43 @@ aside {
     float: right;
     width: 50%;
     margin-top: 50px;
+    background-color: $colorSecundario;
 }
 
 .widget {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.columnaIzquierda {
+    flex: 1;
+}
+
+.columnaDerecha {
+    flex: 1;
+}
+
+.card {
+    width: 200px;
+    height: 100px;
+    background-color: $colorTerciario;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+    text-align: center;
+}
+
+.productosDestacados {
+    display: flex;
     justify-content: center;
 }
+
+
+// Hasta esta parte  hago que al aside ocupe el 50% del main y divido en dos columnas el contenido. Está todo centrado también

@@ -1,6 +1,13 @@
-main {
-    width: 100%;
+body {
+    display: flex;
+    flex-wrap: wrap;
     height: 100vh;
+}
+
+main {
+    float: left ;
+    width: 100%;
+    height: auto;
     background-color: $colorSecundario;
 }
 
@@ -10,4 +17,5 @@ main {
 
 .carousel-item img {
     max-height: 500px;
+    background-size: contain;
 }

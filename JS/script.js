@@ -1,11 +1,15 @@
 $(document).ready(function() {
-    let carousel = $("#miCarrusel");
-    let intervalo = 3000;
-    carousel.carousel();
+    $('.carousel').carousel();
 
-    function cambiarSlide() {
-    carousel.carousel('next');
-    }
+    $('.carousel-control-prev, .carousel-control-next').click(function() {
+    $('.carousel').carousel('pause');
+    });
 
-    setInterval(cambiarSlide, intervalo);
+    $('.carousel').on('slid.bs.carousel', function() {
+    $('.carousel').carousel('cycle');
+    });
+
+    setInterval(function() {
+    $('.carousel').carousel('next');
+    }, 3000);
 });
