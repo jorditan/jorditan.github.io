@@ -36,3 +36,31 @@ main {
 }
 
 // Este @media cumple una funcion muy parecida que el del body pero con el main. Podría ponerse las dos cosas juntas en un solo @
+
+// ACÁ EMPIEZO CON EL CSS DEL TEXTO DE BIENVENIDA
+
+.contenedorBienvenida {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    align-items: center;
+}
+
+.bienvenida {
+    color: #fff;
+}
+
+
+.items ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.items li {
+    display: inline-block;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+// Con este codigo de los items lo q hago es hacer que la lista se ponga en fila y no en columna. 

@@ -43,6 +43,26 @@ main {
     width: 100vh;
     height: max-content; } }
 
+.contenedorBienvenida {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  align-items: center; }
+
+.bienvenida {
+  color: #fff; }
+
+.items ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; }
+
+.items li {
+  display: inline-block;
+  padding: 5px;
+  margin-right: 20px; }
+
 .widget {
   margin-top: 20px;
   color: #fff;
