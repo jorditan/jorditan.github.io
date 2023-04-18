@@ -1,8 +1,17 @@
 body {
-    display: flex;
-    flex-wrap: wrap;
-    height: 100vh;
+    background-color: $colorSecundario;
+    width: 100%;
+    height: 100%;
 }
+
+@media only screen and (max-width: 768px) {
+    body {
+    width: 100vh;
+    } 
+} 
+// Este @media hace que el body ocupe 100 de vh a aprtir de los 768 pixeles, si lo dejaba con el 100% el contenido del body no se adaptaba
+// bien al hacerse responsive. No se si es un problema mio pero me aparecía un cuadro blanco gigante que no se le asignaba a ninguna
+// etiqueta, pero así se me solucionó.
 
 main {
     float: left ;
@@ -19,3 +28,11 @@ main {
     max-height: 500px;
     background-size: contain;
 }
+
+@media only screen and (max-width: 768px) {
+    main {
+    width: 100vh;
+    height: max-content;    }
+}
+
+// Este @media cumple una funcion muy parecida que el del body pero con el main. Podría ponerse las dos cosas juntas en un solo @
