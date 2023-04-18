@@ -20,8 +20,6 @@ aside {
 }
 
 .card {
-    width: 200px;
-    height: 100px;
     margin: 20px;
     display: flex;
     justify-content: center;
@@ -32,6 +30,10 @@ aside {
 
 .card:hover {
     box-shadow: 0px 1px 10px 2px $colorTerciario;
+}
+
+.card span {
+    color: $colorSecundario;
 }
 
 .card img {
