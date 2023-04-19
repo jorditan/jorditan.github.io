@@ -1,7 +1,11 @@
 footer {
     color: #fff;
-    background-color: $colorSecundario;
-    width: auto;
+    background-color: #241B35;
+    min-width: 100% !important;
+    bottom: 0;
+    padding: 10px;
+    height: max-content;
 }
+
 
 //Hice esto simplemente para poder diferenciar el footer del resto del HTML
