@@ -1,11 +1,21 @@
 footer {
+    display: flex;
     color: #fff;
-    background-color: #241B35;
+    background-color: $colorSecundario;
     min-width: 100% !important;
-    bottom: 0;
     padding: 10px;
-    height: max-content;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+} //Todo esto es para que el footer pueda tener tamaño y quede posicionado estáticamente abajo
+
+.contenedor {
+    display: flex;
+    height: 150px;
+    width: 90%;
+    justify-content: center;
 }
 
 
-//Hice esto simplemente para poder diferenciar el footer del resto del HTML
+
+// Con este codeo cree el footer y lo separe en 3 filas  para poder dividirlo en redes sociales, ubicacion y en agradicimiento?? Asi lo dice el HTML
