@@ -31,7 +31,7 @@ header {
     text-decoration: none;
     background: 0 0;
     border: 0;
-    transition: color .15s
+  transition: color .15s}
 
 .nav-item.nav-item:hover {
   background-color: #241B35;
