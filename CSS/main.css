@@ -116,7 +116,7 @@ main {
   border-left: 2px solid #fff;
   height: 100%;
   position: absolute;
-  animation: escribir 5s infinite alternate steps(38); }
+  animation: escribir 5s infinite alternate steps(39); }
 
 @keyframes escribir {
   from {
