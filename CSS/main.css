@@ -1,7 +1,7 @@
 footer {
   display: flex;
   color: #fff;
-  background-color: #1d2a27;
+  background-color: #1e2223;
   min-width: 100% !important;
   padding: 10px;
   height: 200px;
@@ -20,23 +20,29 @@ footer {
   text-align: center;
   align-items: center; }
 
-.links {
-  display: grid;
-  grid-template-columns: repeat(2, 3fr);
-  gap: 30px; }
+.redes {
+  color: #2efabd;
+  display: flex;
+  flex-direction: column; }
 
-.links a {
+.textoRedes {
+  justify-content: flex-start;
+  color: #2efabd;
+  align-items: flex-start; }
+
+.redes a {
   text-decoration: none;
   font-size: 30px;
-  color: #2efabd; }
+  color: #fff;
+  margin: 10px; }
 
 .ubicacion {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  flex-direction: column; }
 
-.ubicacion iframe {
-  height: auto;
-  width: 80%; }
+.ubicacion h5 {
+  color: #2efabd; }
 
 .imgfoot img {
   width: 100%; }
@@ -51,16 +57,14 @@ footer {
     justify-content: center; }
   .contenedor img {
     width: 80%; }
-  .links {
-    padding: 30px;
-    gap: 100px; }
   .links a {
-    font-size: 50px; }
+    font-size: 30px; }
   .ubicacion {
-    height: 300px;
+    height: 100%;
     width: 100%;
     display: flex;
-    justify-content: center; } }
+    justify-content: center;
+    padding: 0px; } }
 
 header {
   height: 50px; }
