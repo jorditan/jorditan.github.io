@@ -12,6 +12,10 @@ header {
     font-size: 20px;
 }
 
+.container-fluid {
+    background-color: $colorPrincipal;
+}
+
 .navbar {
     height: 50px;
     background-color: $colorPrincipal;

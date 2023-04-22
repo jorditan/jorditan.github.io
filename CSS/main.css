@@ -1,18 +1,66 @@
 footer {
   display: flex;
   color: #fff;
-  background-color: #241B35;
+  background-color: #1d2a27;
   min-width: 100% !important;
   padding: 10px;
   height: 200px;
   justify-content: center;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
   align-items: center; }
 
 .contenedor {
   display: flex;
-  height: 150px;
+  height: auto;
   width: 90%;
+  justify-content: space-between;
+  flex-direction: row;
+  text-align: center;
+  align-items: center; }
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+  gap: 30px; }
+
+.links a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #2efabd; }
+
+.ubicacion {
+  display: flex;
   justify-content: center; }
+
+.ubicacion iframe {
+  height: auto;
+  width: 80%; }
+
+.imgfoot img {
+  width: 100%; }
+
+@media only screen and (max-width: 767px) {
+  .contenedor {
+    flex-direction: column; }
+  .imgfoot {
+    padding: 30px; }
+  footer {
+    height: auto;
+    justify-content: center; }
+  .contenedor img {
+    width: 80%; }
+  .links {
+    padding: 30px;
+    gap: 100px; }
+  .links a {
+    font-size: 50px; }
+  .ubicacion {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center; } }
 
 header {
   height: 50px; }
@@ -21,25 +69,16 @@ header {
   margin-left: 30px;
   transition: font-size 2s, background-color 2s; }
 
-/* a */
-.nav-link {
-    display: block;
-    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
-    font-size: var(--bs-nav-link-font-size);
-    font-weight: var(--bs-nav-link-font-weight);
-    color: var(--bs-nav-link-color);
-    text-decoration: none;
-    background: 0 0;
-    border: 0;
-  transition: color .15s}
-
 .nav-item.nav-item:hover {
-  background-color: #241B35;
+  background-color: #1d2a27;
   font-size: 20px; }
+
+.container-fluid {
+  background-color: #427064; }
 
 .navbar {
   height: 50px;
-  background-color: #8956F1;
+  background-color: #427064;
   top: 0;
   box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5); }
 
@@ -47,7 +86,7 @@ main {
   float: left;
   width: 100%;
   height: max-content;
-  background-color: #241B35; }
+  background-color: #1d2a27; }
 
 .carousel {
   height: 45vh; }
@@ -71,7 +110,7 @@ main {
 .bienvenida h1::after {
   bottom: 0;
   content: "";
-  background: #241B35;
+  background: #1d2a27;
   display: flex;
   right: 0;
   border-left: 2px solid #fff;
@@ -115,16 +154,26 @@ main {
   transition: all 400ms ease; }
 
 .card:hover {
-  box-shadow: 0px 1px 10px 2px #CB80FF; }
+  box-shadow: 0px 1px 10px 2px #2efabd; }
 
 .card span {
-  color: #241B35; }
+  color: #1d2a27; }
 
 .card img {
   height: 100px;
   width: 100px;
   object-fit: contain;
   text-align: center; }
+
+@media only screen and (max-width: 996px) {
+  .widget {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+  .card {
+    margin: 10px;
+    width: 80%;
+    height: auto; } }
 
 @media only screen and (max-width: 425px) {
   .widget {

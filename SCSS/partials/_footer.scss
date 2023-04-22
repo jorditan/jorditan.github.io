@@ -7,14 +7,75 @@ footer {
     height: 200px;
     justify-content: center;
     align-items: center;
+    gap: 40px;
+    text-align: center;
+    align-items: center;
 } //Todo esto es para que el footer pueda tener tamaño y quede posicionado estáticamente abajo
 
 .contenedor {
     display: flex;
-    height: 150px;
+    height: auto;
     width: 90%;
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    gap: 30px;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 30px;
+    color: $colorTerciario;}
+
+
+.ubicacion {
+    display: flex;
     justify-content: center;
 }
+.ubicacion iframe {
+    height: auto;
+    width: 80%;
+}
+
+.imgfoot img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    .contenedor {
+    flex-direction: column;
+    }
+    .imgfoot {
+        padding: 30px;
+    }
+    footer {
+        height: auto;
+        justify-content: center;
+    }
+    .contenedor img {
+        width: 80%;
+    }
+    .links {
+        padding: 30px;
+        gap: 100px;
+    }
+    .links a{
+        font-size: 50px;
+    }
+    .ubicacion {
+        height: 300px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }  
+}
+
 
 
 

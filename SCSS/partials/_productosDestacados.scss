@@ -33,6 +33,21 @@
     text-align: center;
 }
 
+
+@media only screen and (max-width: 996px) {
+    .widget {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .card {
+    margin: 10px;
+    width: 80%;
+    height: auto;
+    }
+}
+
 @media only screen and (max-width: 425px) {
     .widget {
     flex-direction: column;
@@ -46,6 +61,8 @@
     height: auto;
     }
 }
+
+
 
 // En esta parte cree la parte de los productos destacados. Esta dispuesto con un flex wrap para que lo ponga todo en una fila. El hover hace la transicion cuando pasa el mouse arriba 
 // El @media hace que apartir de los 768px los productos se dispongan en columna y no en fila.

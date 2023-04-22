@@ -1,6 +1,6 @@
 body {
 	font-family: 'Roboto', sans-serif;
-	background-color: #241B35;
+	background-color: #1d2a27;
 }
 
 .container {
@@ -8,7 +8,7 @@ body {
   	height: 30px;
 	line-height: 35px;
 	width: 65px;
-	background: #1f53c5;
+	background: #1d2a27;
   	text-align: center;
 	border: none;
 	border-radius: 3px;
@@ -21,13 +21,17 @@ body {
 
 .formulario {
   width: 400px;
-  background: #24303c;
+  background: #427064;
   padding: 30px;
   margin: auto;
   margin-top: 3%;
   border-radius: 4px;
   color: white;
-  box-shadow: 7px 13px 37px #000;
+  transition: 1s;
+}
+
+.formulario:hover {
+	box-shadow: 0px 1px 10px 2px #2efabd;
 }
 
 .formulario h4 {
@@ -49,20 +53,19 @@ body {
 
 .formulario__input {
 	width: 95%;
-  background: #24303c;
+  background: #1d2a27;
   padding: 10px;
   border-radius: 4px;
   margin-bottom: 12px;
-  border: 1px solid #1f53c5;
+  border: 1px solid #fff;
   font-family: 'calibri';
   font-size: 18px;
   color: white;
 }
 
 .formulario__input:focus {
-	border: 3px solid #0075FF;
+	border: 3px solid #2efabd;;
 	outline: none;
-	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
 }
 
 .formulario__input-error {
@@ -120,17 +123,17 @@ body {
 	height: 45px;
 	line-height: 45px;
 	width: 30%;
-	background: #1f53c5;
+	background: #1d2a27;
 	color: white ;
 	font-weight: bold;
 	border: none;
 	border-radius: 3px;
 	cursor: pointer;
-	transition: .1s ease all;
+	transition: 0.5s ease all;
 }
 
 .formulario__btn:hover {
-	box-shadow: 3px 0px 30px rgb(240, 0, 0);
+	box-shadow: 0px 1px 10px 2px #2efabd;
 }
 
 .formulario__mensaje-exito {
