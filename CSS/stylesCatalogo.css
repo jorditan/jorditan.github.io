@@ -4,7 +4,12 @@ header {
 
 main {
     background-color: #1d2a27;
-    height: 650px;
+    height: auto;
+}
+
+body {
+    width: 100%;
+    height: auto;
 }
 
 .nav-item {
@@ -28,14 +33,14 @@ main {
     box-shadow:0px 4px 3px rgba(0,0,0,.5);
 }
 
-.contenedorAmd {
+.contenedor {
     width: 100%;
     height: auto;
 }
 
 
 
-.contenedorAmd h1 {
+.contenedor h1 {
     color: #fff;
     font-size: 40px;
     margin-left: 15px;
@@ -44,7 +49,7 @@ main {
     padding: 20px;
 }
 
-.productosAmd {
+.productos {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     margin-top: 20px;
@@ -130,9 +135,9 @@ footer {
 .contenedor {
     display: flex;
     height: auto;
-    width: 90%;
+    width: 100%;
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
     align-items: center;
 }
@@ -198,3 +203,14 @@ footer {
 }
 
 
+
+
+@media only screen and (max-width: 780px) {
+    .productos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+    }
+}
