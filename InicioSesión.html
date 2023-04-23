@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="./CSS/InicioSesión.css">
+</head>
+<body>
+    <main> 
+		<form action="" class="formulario" id="formulario">
+    <div class="container"> 
+      <a class="hover"  type="button" href="./index.html" style="text-decoration:none"><p>Volver</p></a>
+    </div>
+
+    <h4>Inicio de Sesión</h4>
+
+
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label"></label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="Ingrese su Correo Electrónico">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+
+			<div class="formulario__grupo" id="grupo__password">
+				<label for="password" class="formulario__label"></label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password" id="password" placeholder="Ingrese su Contraseña">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+			</div>
+
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="Guardar">
+					Guardar contraseña.
+				</label>
+			</div>
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+		</form>
+</main>
+
+<script src="./JS/InicioSesión.js"></script>
+
+</body>
+</html>
