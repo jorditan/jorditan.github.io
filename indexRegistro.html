@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de Sesión</title>
-    <link rel="stylesheet" href="./CSS/InicioSesión.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./CSS/stylesRegistro.css">
+  <title>Registro</title>
 </head>
 <body>
-    <main> 
+
+<main> 
 		<form action="" class="formulario" id="formulario">
     <div class="container"> 
       <a class="hover"  type="button" href="./index.html" style="text-decoration:none"><p>Volver</p></a>
     </div>
 
-    <h4>Inicio de Sesión</h4>
+    <h4>Formulario Registro</h4>
 
-
-			<div class="formulario__grupo" id="grupo__correo">
-				<label for="correo" class="formulario__label"></label>
+			<div class="formulario__grupo" id="grupo__usuario">
+				<label for="usuario" class="formulario__label"></label>
 				<div class="formulario__grupo-input">
-					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="Ingrese su Correo Electrónico">
+					<input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Ingrese su Usuario">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
-				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+			</div>
+
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label"></label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Ingrese su Nombre">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
 			</div>
 
 			<div class="formulario__grupo" id="grupo__password">
@@ -35,11 +44,42 @@
 				<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
 			</div>
 
+			<div class="formulario__grupo" id="grupo__password2">
+				<label for="password2" class="formulario__label"></label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password2" id="password2" placeholder="Ingresar de nuevo la Contraseña">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+			</div>
+
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label"></label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="Ingrese su Correo Electrónico">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+
+			<div class="formulario__grupo" id="grupo__telefono">
+				<label for="telefono" class="formulario__label"></label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="Ingrese su Número de Teléfono">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+			</div>
+
 			<div class="formulario__grupo" id="grupo__terminos">
 				<label class="formulario__label">
 					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
-					Guardar contraseña.
+					Acepto los Terminos y Condiciones
 				</label>
+			</div>
+
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario. </p>
 			</div>
 
 			<div class="formulario__grupo formulario__grupo-btn-enviar">
@@ -49,7 +89,8 @@
 		</form>
 </main>
 
-<script src="./JS/InicioSesión.js"></script>
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+<script src="./JS/scriptRegistro.js"></script>
 
 </body>
 </html>
