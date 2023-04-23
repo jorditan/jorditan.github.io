@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="./CSS/stylesContacto.css">
+</head>
+<body>
+    <main> 
+		<form action="" class="formulario de Contacto" id="formulario">
+    <div class="container"> 
+      <a class="hover"  type="button" href="./index.html" style="text-decoration:none"><p>Volver</p></a>
+    </div>
+
+    <h4>Formulario de Contacto</h4>
+
+			<div class="formulario__grupo" id="grupo__usuario">
+				<label for="usuario" class="formulario__label"></label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Ingrese su Usuario">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+			</div>
+
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label"></label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Ingrese su Nombre">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+			</div>
+
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label"></label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="Ingrese su Correo Electrónico">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+
+			<div class="formulario__grupo" id="grupo__telefono">
+				<label for="telefono" class="formulario__label"></label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="Ingrese su Número de Teléfono">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+			</div>
+
+            <div class="formulario__grupo" id="grupo__comentario">
+				<label for="comentario" class="formulario__label"></label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="comentario" id="comentario" placeholder="Ingrese su Comentario">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El comentario no puede estar vacío.</p>
+			</div>
+
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+			</div>
+
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario. </p>
+			</div>
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+		</form>
+</main>
+<script src="./JS/scriptContacto.js"></script>
+</body>
+</html>
