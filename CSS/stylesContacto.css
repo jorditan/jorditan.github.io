@@ -138,7 +138,7 @@ body {
 
 .formulario__mensaje-exito {
 	font-size: 14px;
-	color: #119200;
+	color: #ffffff;
 	display: none;
 }
 
@@ -186,3 +186,4 @@ body {
 		width: 100%;
 	}
 }
+

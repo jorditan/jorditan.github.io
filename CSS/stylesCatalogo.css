@@ -1,0 +1,200 @@
+header {
+    height: 50px;
+}
+
+main {
+    background-color: #1d2a27;
+    height: 650px;
+}
+
+.nav-item {
+    margin-left: 30px;
+    transition: font-size 2s, background-color 2s;
+}
+
+.nav-item.nav-item:hover {
+    background-color: #1d2a27 ;
+    font-size: 20px;
+}
+
+.container-fluid {
+    background-color: #427064;
+}
+
+.navbar {
+    height: 50px;
+    background-color: #427064;
+    top:0;
+    box-shadow:0px 4px 3px rgba(0,0,0,.5);
+}
+
+.contenedorAmd {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.contenedorAmd h1 {
+    color: #fff;
+    font-size: 40px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.productosAmd {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    margin-top: 20px;
+    gap: 20px;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+.card {
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    transition: all 400ms ease;
+}
+
+.card:hover {
+    box-shadow: 0px 1px 10px 2px #2efabd; ;
+}
+.card img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+    text-align: center;
+}
+
+.contenedorNvidia {
+    width: 100%;
+    height: 300px;
+}
+
+.contenedorNvidia h1 {
+    color: #fff;
+    font-size: 40px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center
+}
+
+.productosNvidia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contenedorPerifericos {
+    width: 100%;
+    height: 300px;
+}
+
+.contenedorPerifericos h1 {
+    color: #fff;
+    font-size: 40px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.productosPerifericos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+footer {
+    display: flex;
+    color: #fff;
+    background-color: #1e2223;
+    min-width: 100% !important;
+    padding: 10px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+    align-items: center;
+} 
+
+.contenedor {
+    display: flex;
+    height: auto;
+    width: 90%;
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+.redes {
+    color: #2efabd;
+    display: flex;
+    flex-direction: column; 
+}
+
+.textoRedes {
+    justify-content: flex-start;
+    color: #2efabd;
+    align-items: flex-start;
+}
+.redes a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff;
+    margin: 10px;
+}
+
+
+.ubicacion {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ubicacion h5 {
+    color: #2efabd;
+}
+
+
+.imgfoot img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    .contenedor {
+    flex-direction: column;
+    }
+    .imgfoot {
+        padding: 30px;
+    }
+    footer {
+        height: auto;
+        justify-content: center;
+    }
+    .contenedor img {
+        width: 80%;
+    }
+    .links a{
+        font-size: 30px;
+    }
+    .ubicacion {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+    }  
+}
+
+
