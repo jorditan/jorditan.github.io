@@ -34,11 +34,11 @@
                             Catálogo
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./amd.html">AMD</a></li>
-                                <li><a class="dropdown-item" href="./nvidia.html">Nvidia</a></li>
-                                <li><a class="dropdown-item" href="./perofiericos.html">Periféricos</a></li>
-                                <li><a class="dropdown-item" href="./motherboards.html">Motherboard</a></li>
-                                <li><a class="dropdown-item" href="./memorias.html">Almacenamiento ROM/RAM</a></li>
+                            <li><a class="dropdown-item" href="#">AMD</a></li>
+                            <li><a class="dropdown-item" href="../nvidia.html">Nvidia</a></li>
+                            <li><a class="dropdown-item" href="../perifericos.html">Periféricos</a></li>
+                            <li><a class="dropdown-item" href="../motheboards.html">Motherboard</a></li>
+                            <li><a class="dropdown-item" href="../memorias.html">Almacenamiento</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -57,48 +57,101 @@
     </header>
 
     <main>
-        <div class="contenedor">
-            <h1>AMD</h1>
-            <div class="productos">
-                <div class="card col-md-10">
-                    <img src="./IMG/Imagenes productos destacados/ryzen 5 5600g.jpg">
-                    <h6>Procesador AMD Ryzen 5 5600G</h6>
-                    <span>$80.000</span>
-                    <button type="button" class="btn btn-outline-dark">Añadir al carrito</button>
-                </div>
-                <div class="card col-md-10">
-                    <img src="./IMG/imagenesCatalogo/ryzen 9 5600x.jpg">
-                    <h6>Procesador AMD Ryzen 9 5900x</h6>
-                    <span>$270.000</span>
-                    <button type="button" class="btn btn-outline-dark">Añadir al carrito</button>
-                </div>
-                <div class="card col-md-10">
-                    <img src="./IMG/imagenesCatalogo/rx 580.jpg">
-                    <h6>RX 500 Series RX 580</h6>
-                    <span>$240.000</span>
-                    <button type="button" class="btn btn-outline-dark">Añadir al carrito</button>
-                </div>
-                <div class="card col-md-10">
-                    <img src="./IMG/imagenesCatalogo/ryzen 3 3200g.jpg">
-                    <h6>Procesador AMD Ryzen 3 3200G</h6>
-                    <span>$70.000</span>
-                    <button type="button" class="btn btn-outline-dark">Añadir al carrito</button>
-                </div>
-                <div class="card col-md-10">
-                    <img src="./IMG/Imagenes productos destacados/RX 550 2GB.jpg">
-                    <h6>RX 550 2GB</h6>
-                    <span>$48.000</span>
-                    <button type="button" class="btn btn-outline-dark">Añadir al carrito</button>
-                </div>
-                <div class="card col-md-10">
-                    <img src="./IMG/imagenesCatalogo/ryzen 7 5600g.jpg">
-                    <h6>Ryzen 7 5600G</h6>
-                    <span>$140.000</span>
-                    <button type="button" class="btn btn-outline-dark">Añadir al carrito</button>
+
+<div class="contenedor">
+
+    <h1>AMD</h1>
+        <div class="widget">
+        
+            <div class="item">
+                <div class="card">
+                    <img src="./IMG/imagenesCatalogo/ryzen 9 5600x.jpg" class="img-item">
+                    <span class="titulo-item" >AMD Ryzen 9 5900x</span>
+                    <span class="precio-item">$270.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>               
                 </div>
             </div>
+        
+            <div class="item">
+                <div class="card">
+                    <img src="./IMG/imagenesCatalogo/rx 580.jpg" class="img-item">
+                    <span class="titulo-item" >RX 500 Series RX 580</span>
+                    <span class="precio-item">$240.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+            </div>
+        
+            <div class="item">
+                <div class="card">
+                    <img src="./IMG/imagenesCatalogo/ryzen 3 3200g.jpg" class="img-item">
+                    <span class="titulo-item" >AMD Ryzen 3 3200G</span>
+                    <span class="precio-item">$70.000</span>
+                    <button class="boton-item">Agregar al Carrito</button></div>
+            </div>
+        
+            <div class="item">
+                <div class="card">
+                    <img src="./IMG/imagenesCatalogo/ryzen 7 5600g.jpg" class="img-item">
+                    <span class="titulo-item">Ryzen 7 5600G</span>
+                    <span class="precio-item">$140.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                </div>
+            </div>
+            
         </div>
-
+        <div class="widget col-md-12">
+        
+            <div class="carrito" id="carrito">
+                <div class="header-carrito">
+                    <h2>Tu Carrito</h2>
+                </div>
+        
+                <div class="carrito-items">
+                    <!-- 
+                    <div class="carrito-item">
+                        <img src="img/boxengasse.png" width="80px" alt="">
+                        <div class="carrito-item-detalles">
+                            <span class="carrito-item-titulo">Box Engasse</span>
+                            <div class="selector-cantidad">
+                                <i class="fa-solid fa-minus restar-cantidad"></i>
+                                <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                                <i class="fa-solid fa-plus sumar-cantidad"></i>
+                            </div>
+                            <span class="carrito-item-precio">$15.000,00</span>
+                        </div>
+                       <span class="btn-eliminar">
+                            <i class="fa-solid fa-trash"></i>
+                       </span>
+                    </div>
+                    <div class="carrito-item">
+                        <img src="img/skinglam.png" width="80px" alt="">
+                        <div class="carrito-item-detalles">
+                            <span class="carrito-item-titulo">Skin Glam</span>
+                            <div class="selector-cantidad">
+                                <i class="fa-solid fa-minus restar-cantidad"></i>
+                                <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                                <i class="fa-solid fa-plus sumar-cantidad"></i>
+                            </div>
+                            <span class="carrito-item-precio">$18.000,00</span>
+                        </div>
+                       <button class="btn-eliminar">
+                            <i class="fa-solid fa-trash"></i>
+                       </button>
+                    </div>
+                     -->
+                </div>
+                <div class="carrito-total">
+                    <div class="fila">
+                        <strong>Tu Total</strong>
+                        <span class="carrito-precio-total">
+                            $120.000,00
+                        </span>
+                    </div>
+                    <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+                </div>
+        </div>
+</div>
+ 
     </main>
 
     <footer>
