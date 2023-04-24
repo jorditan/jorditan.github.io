@@ -144,12 +144,12 @@ function ocultarCarrito(){
     var carritoItems = document.getElementsByClassName('carrito-items')[0];
     if(carritoItems.childElementCount==0){
         var carrito = document.getElementsByClassName('carrito')[0];
-        carrito.style.marginRight = '-100%';
+        carrito.style.marginRight = '0';
         carrito.style.opacity = '0';
         carritoVisible = false;
     
         var items =document.getElementsByClassName('contenedor-items')[0];
-        items.style.width = '100%';
+        items.style.width = '0';
     }
 }
 
