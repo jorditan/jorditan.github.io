@@ -57,48 +57,113 @@
     </header>
 
     <main>
-        <div class="contenedor">
+<div class="contenedor">
             <h1>Motherboards</h1>
-            <div class="productos">
-                <div class="card col-md-10">
-                    <img src="./IMG/imagenesCatalogo/asus a320.jpg">
-                    <h6>ASUS PRIME A320M-K mATX</h6>
-                    <span>$29.000</span>
-                    <button type="button" class="btn btn-outline-dark">Añadir al carrito</button>
+    <div class="widget">      
+        <div class="productos">
+            <div class="item">
+                <div class="card col-md-12">
+                    <img src="./IMG/imagenesCatalogo/asus a320.jpg" class="img-item">
+                    <span class="titulo-item">ASUS PRIME A320M-K mATX</span>
+                    <span class="precio-item">$29.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
                 </div>
-                <div class="card col-md-10">
-                    <img src="./IMG/imagenesCatalogo/a320 s2h.jpg">
-                    <h6>Gigabyte A320M-S2H</h6>
-                    <span>$44.000</span>
-                    <button type="button" class="btn btn-outline-dark">Añadir al carrito</button>
+            </div>    
+            <div class="item">
+                <div class="card col-md-12">
+                    <img src="./IMG/imagenesCatalogo/a320 s2h.jpg" class="img-item">
+                    <span class="titulo-item">Gigabyte A320M-S2H</span>
+                    <span class="precio-item">$44.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
                 </div>
-                <div class="card col-md-10">
-                    <img src="./IMG/imagenesCatalogo/asus rog maximus.jpg">
-                    <h6>Asus Rog Maximus Z790</h6>
-                    <span>$400.000</span>
-                    <button type="button" class="btn btn-outline-dark">Añadir al carrito</button>
+            </div>
+            <div class="item">
+                <div class="card col-md-12">
+                    <img src="./IMG/imagenesCatalogo/asus rog maximus.jpg" class="img-item">
+                    <span class="titulo-item">Asus Rog Maximus Z790</span>
+                    <span class="precio-item">$400.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
                 </div>
-                <div class="card col-md-10">
-                    <img src="./IMG/imagenesCatalogo/b550.jpg">
-                    <h6>Asus Tuf B550m-Plus Wifi</h6>
-                    <span>$80.000</span>
-                    <button type="button" class="btn btn-outline-dark">Añadir al carrito</button>
+            </div>
+            <div class="item">
+                <div class="card col-md-12">
+                    <img src="./IMG/imagenesCatalogo/b550.jpg" class="img-item">
+                    <span class="titulo-item">Asus Tuf B550m-Plus Wifi</span>
+                    <span class="precio-item">$80.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
                 </div>
-                <div class="card col-md-10">
-                    <img src="./IMG/ImagenesCatalogo/b450.png">
-                    <h6>MSI B450 Gaming Plus Max </h6>
-                    <span>$54.000</span>
-                    <button type="button" class="btn btn-outline-dark">Añadir al carrito</button>
+            </div>
+            <div class="item">
+                <div class="card col-md-12">
+                    <img src="./IMG/ImagenesCatalogo/b450.png" class="img-item">
+                    <span class="titulo-item">MSI B450 Gaming Plus Max </span>
+                    <span class="precio-item">$54.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
                 </div>
-                <div class="card col-md-10">
-                    <img src="./IMG/imagenesCatalogo/h410m.jpg">
-                    <h6>Mother Gigabyte H410M H</h6>
-                    <span>$45.000</span>
-                    <button type="button" class="btn btn-outline-dark">Añadir al carrito</button>
+            </div>
+            <div class="item">
+                <div class="card col-md-12">
+                    <img src="./IMG/imagenesCatalogo/h410m.jpg" class="img-item">
+                    <span class="titulo-item">Mother Gigabyte H410M H</span>
+                    <span class="precio-item">$45.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
                 </div>
             </div>
         </div>
+    </div>  
+    <div class="widget col-md-12">
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+    
+            <div class="carrito-items">
+                <!-- 
+                <div class="carrito-item">
+                    <img src="img/boxengasse.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Box Engasse</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$15.000,00</span>
+                    </div>
+                   <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </span>
+                </div>
+                <div class="carrito-item">
+                    <img src="img/skinglam.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Skin Glam</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$18.000,00</span>
+                    </div>
+                   <button class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </button>
+                </div>
+                 -->
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        $120.000,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+    </div>
+</div>
 
+    
     </main>
 
     <footer>
