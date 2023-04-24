@@ -1,5 +1,3 @@
-
-
 body {
 	font-family: 'Roboto', sans-serif;
 	background-color: #1d2a27;
@@ -7,14 +5,14 @@ body {
 
 .container {
 	color: white;
-  	height: 30px;
+	height: 30px;
 	line-height: 35px;
 	width: 65px;
 	background: #1d2a27;
-  	text-align: center;
+	text-align: center;
 	border: none;
 	border-radius: 3px;
-  	justify-content: initial;
+	justify-content: initial;
 }
 
 .container p {
@@ -22,14 +20,14 @@ body {
 }
 
 .formulario {
-  width: 400px;
-  background: #427064;
-  padding: 30px;
-  margin: auto;
-  margin-top: 3%;
-  border-radius: 4px;
-  color: white;
-  transition: 1s;
+	width: 400px;
+	background: #427064;
+	padding: 30px;
+	margin: auto;
+	margin-top: 3%;
+	border-radius: 4px;
+	color: white;
+	transition: 1s;
 }
 
 .formulario:hover {
@@ -37,9 +35,9 @@ body {
 }
 
 .formulario h4 {
-  font-size: 22px;
-  margin-bottom: 20px;
-  text-align: center;
+	font-size: 22px;
+	margin-bottom: 20px;
+	text-align: center;
 }
 
 .formulario__label {
@@ -55,14 +53,14 @@ body {
 
 .formulario__input {
 	width: 95%;
-  background: #1d2a27;
-  padding: 10px;
-  border-radius: 4px;
-  margin-bottom: 12px;
-  border: 1px solid #fff;
-  font-family: 'calibri';
-  font-size: 18px;
-  color: white;
+	background: #1d2a27;
+	padding: 10px;
+	border-radius: 4px;
+	margin-bottom: 12px;
+	border: 1px solid #fff;
+	font-family: 'calibri';
+	font-size: 18px;
+	color: white;
 }
 
 .formulario__input:focus {
@@ -74,12 +72,12 @@ body {
 	font-size: 12px;
 	margin-bottom: 0;
 	display: none;
-  justify-content: center;
+	justify-content: center;
 }
 
 .formulario__input-error-activo {
 	display: block;
-  justify-content: center;
+	justify-content: center;
 }
 
 .formulario__validacion-estado {
@@ -89,7 +87,7 @@ body {
 	z-index: 100;
 	font-size: 16px;
 	opacity: 0;
-  justify-content: center;
+	justify-content: center;
 }
 
 .formulario__checkbox {
@@ -103,12 +101,12 @@ body {
 	padding: 0 15px;
 	border-radius: 3px;
 	display: none;
-  justify-content: center;
+	justify-content: center;
 }
 
 .formulario__mensaje-activo {
 	display: block;
-  justify-content: center;
+	justify-content: center;
 }
 
 .formulario__mensaje p {

@@ -6,14 +6,14 @@ body {
 
 .container {
 	color: white;
-  	height: 30px;
+	height: 30px;
 	line-height: 35px;
 	width: 65px;
 	background: #1d2a27;
-  	text-align: center;
+	text-align: center;
 	border: none;
 	border-radius: 3px;
-  	justify-content: initial;
+	justify-content: initial;
 }
 
 .container p {
@@ -21,14 +21,14 @@ body {
 }
 
 .formulario {
-  width: 400px;
-  background: #427064;
-  padding: 30px;
-  margin: auto;
-  margin-top: 3%;
-  border-radius: 4px;
-  color: white;
-  transition: 1s;
+	width: 400px;
+	background: #427064;
+	padding: 30px;
+	margin: auto;
+	margin-top: 3%;
+	border-radius: 4px;
+	color: white;
+	transition: 1s;
 }
 
 .formulario:hover {
@@ -36,9 +36,9 @@ body {
 }
 
 .formulario h4 {
-  font-size: 22px;
-  margin-bottom: 20px;
-  text-align: center;
+	font-size: 22px;
+	margin-bottom: 20px;
+	text-align: center;
 }
 
 .formulario__label {
@@ -102,12 +102,12 @@ body {
 	padding: 0 15px;
 	border-radius: 3px;
 	display: none;
-  justify-content: center;
+	justify-content: center;
 }
 
 .formulario__mensaje-activo {
 	display: block;
-  justify-content: center;
+	justify-content: center;
 }
 
 .formulario__mensaje p {
@@ -172,7 +172,7 @@ body {
 	padding: 40px;
 }
 
-/* ----- -----  Mediaqueries ----- ----- */
+
 @media screen and (max-width: 800px) {
 	.formulario {
 		justify-content: center;

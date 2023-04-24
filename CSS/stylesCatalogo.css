@@ -36,12 +36,12 @@ body {
     box-shadow:0px 4px 3px rgba(0,0,0,.5);
 }
 
+/* CODIGO PRODUCTOS ABAJO */
+
 .contenedor {
     width: 100%;
     height: auto;
 }
-
-
 
 .contenedor h1 {
     color: #fff;
@@ -58,7 +58,6 @@ body {
     margin-top: 20px;
     gap: 20px;
     justify-content: center;
-    margin-left: 40px;
 }
 
 .card {
@@ -81,63 +80,6 @@ body {
     text-align: center;
 }
 
-footer {
-    display: flex;
-    color: #fff;
-    background-color: #1e2223;
-    min-width: 100% !important;
-    padding: 10px;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    text-align: center;
-    align-items: center;
-} 
-
-.contenedor {
-    display: flex;
-    height: auto;
-    width: 100%;
-    justify-content: space-between;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-}
-
-.redes {
-    color: #2efabd;
-    display: flex;
-    flex-direction: column; 
-}
-
-.textoRedes {
-    justify-content: flex-start;
-    color: #2efabd;
-    align-items: flex-start;
-}
-.redes a {
-    text-decoration: none;
-    font-size: 30px;
-    color: #fff;
-    margin: 10px;
-}
-
-
-.ubicacion {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.ubicacion h5 {
-    color: #2efabd;
-}
-
-
-.imgfoot img {
-    width: 100%;
-}
 
 .widget {
     margin-top: 20px;
@@ -147,7 +89,7 @@ footer {
     width: 100%;
     justify-content: center;
     height: 100%; }
-  
+
 .card {
     margin: 5px;
     justify-content: center;
@@ -156,8 +98,8 @@ footer {
     transition: all 400ms ease;
     width: 320px;
     height: auto 320px;
-  }
-  
+}
+
 .card:hover {
     box-shadow: 0px 1px 10px 2px #2efabd; }
 
@@ -173,7 +115,7 @@ footer {
 
 
 
-    @media only screen and (max-width: 996px) {
+@media only screen and (max-width: 1200px) {
     .widget {
     flex-direction: row;
     align-items: center;
@@ -183,19 +125,34 @@ footer {
     width: 100%;
     height: auto; } }
 
+
+@media only screen and (max-width: 780px) {
+    .contenedor {
+        display: flex;
+        justify-content: center;
+    }
+    .productos{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+}
+
+/* CODIGO CARRITO ABAJO */
+
 .btn {
     margin-bottom: 8px;
     width: 140px;
 }
- 
+
 span {
     margin-top: 0;
     margin-bottom: .5rem;
     font-weight: 500;
     line-height: 1.2;
     color: var(--bs-heading-color,inherit);
-  }
-  
+}
+
 .titulo-item {
     margin-top: 0;
     margin-bottom: .5rem;
@@ -325,6 +282,10 @@ span {
 .carrito-total .btn-pagar:hover{
     scale: 1.05;
 }
+
+/* MEDIA QUERYS ABAJO */
+
+
 @media screen and (max-width: 850px) {
     .contenedor {
     display: block;
@@ -333,7 +294,7 @@ span {
         width: 100% !important;
     }
     .carrito{
-        width: 100%;
+        width: 80%;
     }
     .widget {
     flex-direction: column;
@@ -383,6 +344,66 @@ span {
     }
 
 
+/* FOOTER CON RESPECTIVO MEDIA QUERY ABAJO */
+
+    footer {
+        display: flex;
+        color: #fff;
+        background-color: #1e2223;
+        min-width: 100% !important;
+        padding: 10px;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        text-align: center;
+        align-items: center;
+    } 
+    
+    .contenedor {
+        display: flex;
+        height: auto;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .redes {
+        color: #2efabd;
+        display: flex;
+        flex-direction: column; 
+    }
+    
+    .textoRedes {
+        justify-content: flex-start;
+        color: #2efabd;
+        align-items: flex-start;
+    }
+    .redes a {
+        text-decoration: none;
+        font-size: 30px;
+        color: #fff;
+        margin: 10px;
+    }
+    
+    
+    .ubicacion {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .ubicacion h5 {
+        color: #2efabd;
+    }
+    
+    
+    .imgfoot img {
+        width: 100%;
+    }
+
 
 @media only screen and (max-width: 767px) {
     .contenedor {
@@ -414,11 +435,13 @@ span {
 
 
 @media only screen and (max-width: 780px) {
+    .contenedor {
+        display: flex;
+        justify-content: center;
+    }
     .productos{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
         width: 80%;
     }
 }
