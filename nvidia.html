@@ -57,47 +57,111 @@
     </header>
 
     <main>
-        <div class="contenedor">
-            <h1>NVIDIA</h1>
-            <div class="productos">
-                <div class="card col-md-10">
-                    <img src="./IMG/imagenesCatalogo/gt 730 asus.jpg">
-                    <h6>GT 730 ASUS</h6>
-                    <span>$30.000</span>
-                    <button type="button" class="btn btn-outline-dark">Añadir al carrito</button>
+<div class="contenedor">
+        <h1>NVIDIA</h1>
+    <div class="widget">
+        <div class="productos">
+            <div class="item">
+                <div class="card col-md-12">
+                    <img src="./IMG/imagenesCatalogo/gt 730 asus.jpg" class="img-item">
+                    <span class="titulo-item">GT 730 ASUS</span>
+                    <span class="precio-item">$30.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
                 </div>
-                <div class="card col-md-10">
-                    <img src="./IMG/imagenesCatalogo/gtx 1060 super.jpg">
-                    <h6>GTX 1060 Super MSI</h6>
-                    <span>$200.000</span>
-                    <button type="button" class="btn btn-outline-dark">Añadir al carrito</button>
+            </div>    
+            <div class="item">
+                <div class="card col-md-12">
+                    <img src="./IMG/imagenesCatalogo/gtx 1060 super.jpg" class="img-item">
+                    <span class="titulo-item">GTX 1060 Super MSI</span>
+                    <span class="precio-item">$200.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
                 </div>
-                <div class="card col-md-10">
-                    <img src="./IMG/imagenesCatalogo/gtx 1650 ti.jpg">
-                    <h6>GTX 1650 ASUS Tuf</h6>
-                    <span>$120.000</span>
-                    <button type="button" class="btn btn-outline-dark">Añadir al carrito</button>
+            </div>
+            <div class="item">
+                <div class="card col-md-12">
+                    <img src="./IMG/imagenesCatalogo/gtx 1650 ti.jpg" class="img-item">
+                    <span class="titulo-item">GTX 1650 ASUS Tuf</span>
+                    <span class="precio-item">$120.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
                 </div>
-                <div class="card col-md-10">
-                    <img src="./IMG/imagenesCatalogo/Rtx 4070 ti.png">
-                    <h6>RTX 4070 Ti AERO OC 12GB</h6>
-                    <span>$870.000</span>
-                    <button type="button" class="btn btn-outline-dark">Añadir al carrito</button>
+            </div>
+            <div class="item">
+                <div class="card col-md-12">
+                    <img src="./IMG/imagenesCatalogo/Rtx 4070 ti.png" class="img-item">
+                    <span class="titulo-item">RTX 4070 Ti AERO OC 12GB</span>
+                    <span class="precio-item">$870.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
                 </div>
-                <div class="card col-md-10">
-                    <img src="./IMG/ImagenesCatalogo/gt 1030.jpg">
-                    <h6>GT 1030 2GB Low Gigabyte </h6>
-                    <span>$48.000</span>
-                    <button type="button" class="btn btn-outline-dark">Añadir al carrito</button>
+            </div>
+            <div class="item">
+                <div class="card col-md-12">
+                    <img src="./IMG/ImagenesCatalogo/gt 1030.jpg" class="img-item">
+                    <span class="titulo-item">GT 1030 2GB Low Gigabyte </span>
+                    <span class="precio-item">$48.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
                 </div>
-                <div class="card col-md-10">
-                    <img src="./IMG/imagenesCatalogo/gtx 1050 ti.jpg">
-                    <h6>GTX 1050 Ti MSI</h6>
-                    <span>$200.000</span>
-                    <button type="button" class="btn btn-outline-dark">Añadir al carrito</button>
+            </div>
+            <div class="item">
+                <div class="card col-md-12">
+                    <img src="./IMG/imagenesCatalogo/gtx 1050 ti.jpg" class="img-item">
+                    <span class="titulo-item">GTX 1050 Ti MSI</span>
+                    <span class="precio-item">$200.000</span>
+                    <button class="boton-item">Agregar al Carrito</button>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="widget col-md-12">
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+    
+            <div class="carrito-items">
+                <!-- 
+                <div class="carrito-item">
+                    <img src="img/boxengasse.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Box Engasse</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$15.000,00</span>
+                    </div>
+                   <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </span>
+                </div>
+                <div class="carrito-item">
+                    <img src="img/skinglam.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Skin Glam</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$18.000,00</span>
+                    </div>
+                   <button class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </button>
+                </div>
+                 -->
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        $120.000,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+    </div>
+</div>
 
     </main>
 
