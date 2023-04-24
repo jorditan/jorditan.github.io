@@ -1,3 +1,6 @@
+.navbar-brand img{
+    height: 20px;
+}
 header {
     height: 50px;
 }
@@ -287,6 +290,7 @@ span {
     background: transparent;
     z-index: 20;
 }
+
 .carrito .carrito-item .btn-eliminar i{
     pointer-events: none;
 }

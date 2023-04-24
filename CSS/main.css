@@ -1,3 +1,8 @@
+.navbar-brand img{
+  height: 20px;
+}
+
+
 footer {
   display: flex;
   color: #fff;
@@ -84,7 +89,10 @@ header {
   height: 50px;
   background-color: #427064;
   top: 0;
-  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5); 
+}
+
+
 
 body {
   width: 100%;
@@ -92,6 +100,7 @@ body {
 
 
 main {
+  width: 100%;
   float: left;
   height: max-content;
   background-color: #1d2a27; }
@@ -212,7 +221,7 @@ span {
 
 .carrito {
   border: 1px solid #666;
-  width: 50%;
+  width: 100vh;
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: auto;

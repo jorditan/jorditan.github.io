@@ -1,3 +1,5 @@
+
+
 body {
 	font-family: 'Roboto', sans-serif;
 	background-color: #1d2a27;
@@ -162,6 +164,13 @@ body {
 
 .formulario__grupo-incorrecto .formulario__input {
 	border: 3px solid #bb2929;
+}
+
+.contenedorLogo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
 }
 
 @media screen and (max-width: 800px) {
