@@ -86,9 +86,13 @@ header {
   top: 0;
   box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5); }
 
+body {
+  width: 100%;
+}
+
+
 main {
   float: left;
-  width: 100%;
   height: max-content;
   background-color: #1d2a27; }
 
@@ -161,7 +165,7 @@ main {
 
 .card:hover {
   box-shadow: 0px 1px 10px 2px #2efabd;
-  height: 260px; }
+}
 
 .card span {
   color: #1d2a27; 
@@ -362,13 +366,13 @@ span {
 
 @media screen and (max-width: 300px) {
     .contenedor {
-      display: block;
+    display: block;
      }
     .contenedor-items{
-      width: 100% !important;
+    width: 100% !important;
     }
     .carrito{
-       width: 100%;
+      width: 100%;
     }
     .widget {
       flex-direction: column;

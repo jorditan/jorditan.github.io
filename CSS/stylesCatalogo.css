@@ -51,7 +51,7 @@ body {
 
 .productos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 4fr); 
     margin-top: 20px;
     gap: 20px;
     justify-content: center;
@@ -76,46 +76,6 @@ body {
     width: 100px;
     object-fit: contain;
     text-align: center;
-}
-
-.contenedorNvidia {
-    width: 100%;
-    height: 300px;
-}
-
-.contenedorNvidia h1 {
-    color: #fff;
-    font-size: 40px;
-    margin-left: 15px;
-    display: flex;
-    justify-content: center
-}
-
-.productosNvidia {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.contenedorPerifericos {
-    width: 100%;
-    height: 300px;
-}
-
-.contenedorPerifericos h1 {
-    color: #fff;
-    font-size: 40px;
-    margin-left: 15px;
-    display: flex;
-    justify-content: center;
-}
-
-.productosPerifericos {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 20px;
 }
 
 footer {
@@ -185,7 +145,7 @@ footer {
     justify-content: center;
     height: 100%; }
   
-  .card {
+.card {
     margin: 5px;
     justify-content: center;
     align-items: center;
@@ -195,44 +155,37 @@ footer {
     height: auto 320px;
   }
   
-  .card:hover {
-    box-shadow: 0px 1px 10px 2px #2efabd;
-    height: 220px; }
-  
-  .card span {
+.card:hover {
+    box-shadow: 0px 1px 10px 2px #2efabd; }
+
+.card span {
     color: #1d2a27; 
-  }
-  
-  .card img {
+}
+
+.card img {
     height: 100px;
     width: 100px;
     object-fit: contain;
     text-align: center; }
-  
-  @media only screen and (max-width: 996px) {
+
+
+
+    @media only screen and (max-width: 996px) {
     .widget {
-      flex-direction: row;
-      align-items: center;
-      justify-content: center; }
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
     .card {
-      margin: 10px;
-      width: 100%;
-      height: auto; } }
-  
-  .btn {
-      margin-bottom: 8px;
-      width: 140px;
-  }
-  
-  span {
-      margin-top: 0;
-      margin-bottom: .5rem;
-      font-weight: 500;
-      line-height: 1.2;
-      color: var(--bs-heading-color,inherit);
-  }
-  
-  .titulo-item {
+    margin: 10px;
+    width: 100%;
+    height: auto; } }
+
+.btn {
+    margin-bottom: 8px;
+    width: 140px;
+}
+ 
+span {
     margin-top: 0;
     margin-bottom: .5rem;
     font-weight: 500;
@@ -240,9 +193,15 @@ footer {
     color: var(--bs-heading-color,inherit);
   }
   
-  
-  
-  .carrito {
+.titulo-item {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--bs-heading-color,inherit);
+} 
+
+.carrito {
     border: 1px solid #666;
     width: 50%;
     border-radius: 10px;
@@ -256,35 +215,35 @@ footer {
     background-color: white;
     justify-content: center;
     color: #000;
-  }
-  .carrito .header-carrito{
+}
+.carrito .header-carrito{
     background-color: #000;
     color: #fff;
     text-align: center;
     padding: 20px 0;
-  }
-  .carrito .carrito-item{
+}
+.carrito .carrito-item{
     display: flex;
     align-items: center;
     position: relative;
     border-bottom: 1px solid #666;
     padding: 20px;
     background-color: white;
-  }
-  .carrito .carrito-item img{
+}
+.carrito .carrito-item img{
     margin-right: 20px;
-  }
-  .carrito .carrito-item .carrito-item-titulo{
+}
+.carrito .carrito-item .carrito-item-titulo{
     display: block;
     font-weight: bold;
     text-transform: uppercase;
-  }
-  .carrito .carrito-item .selector-cantidad{
+}
+.carrito .carrito-item .selector-cantidad{
     display: inline-block;
     margin-right: 25px;
     color: #000;
-  }
-  .carrito .carrito-item .carrito-item-cantidad{
+}
+.carrito .carrito-item .carrito-item-cantidad{
     border: none;
     font-size: 18px;
     background-color: transparent;
@@ -293,8 +252,8 @@ footer {
     padding: 20px;
     text-align: center;
     color: #000;
-  }
-  .carrito .carrito-item .selector-cantidad i{
+}
+.carrito .carrito-item .selector-cantidad i{
     font-size: 18px;
     width: 32px;
     height: 32px;
@@ -304,14 +263,14 @@ footer {
     border: 1px solid #000;
     cursor: pointer;
     color: #000;
-  }
-  .carrito .carrito-item .carrito-item-precio{
+}
+.carrito .carrito-item .carrito-item-precio{
     font-weight: bold;
     display: inline-block;
     font-size: 18px;
     margin-bottom: 5px;
-  }
-  .carrito .carrito-item .btn-eliminar{
+}
+.carrito .carrito-item .btn-eliminar{
     position: absolute;
     right: 15px;
     top: 15px;
@@ -327,24 +286,24 @@ footer {
     display: block;
     background: transparent;
     z-index: 20;
-  }
-  .carrito .carrito-item .btn-eliminar i{
+}
+.carrito .carrito-item .btn-eliminar i{
     pointer-events: none;
-  }
-  
-  .carrito-total{
+}
+
+.carrito-total{
     background-color: #f3f3f3;
     padding: 5px;
-  }
-  .carrito-total .fila{
+}
+.carrito-total .fila{
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 10px;
-  }
-  .carrito-total .btn-pagar{
+}
+.carrito-total .btn-pagar{
     display: block;
     width: 100%;
     border: none;
@@ -358,14 +317,13 @@ footer {
     align-items: center;
     cursor: pointer;
     transition: .3s;
-  }
-  .carrito-total .btn-pagar:hover{
+}
+.carrito-total .btn-pagar:hover{
     scale: 1.05;
-  }
-  
-  @media screen and (max-width: 850px) {
+}
+@media screen and (max-width: 850px) {
     .contenedor {
-      display: block;
+    display: block;
     }
     .contenedor-items{
         width: 100% !important;
@@ -374,50 +332,51 @@ footer {
         width: 100%;
     }
     .widget {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center; }
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
     .card {
-      margin: 10px;
-      width: 300px;
-      height: auto; }
-      body{
-        width: 100%;
-      }
-  }
-  
-  @media only screen and (max-width: 425px) {
+    margin: 10px;
+    width: 300px;
+    height: auto; }
+    
+    body{
+    width: 100%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
     .widget {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center; }
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
     .card {
-      margin: 10px;
-      width: 300px;
-      height: auto; } }
-  
-  @media screen and (max-width: 300px) {
-      .contenedor {
+    margin: 10px;
+    width: 300px;
+    height: auto; } }
+
+@media screen and (max-width: 300px) {
+    .contenedor {
         display: block;
-       }
-      .contenedor-items{
-        width: 100% !important;
-      }
-      .carrito{
-         width: 100%;
-      }
-      .widget {
+}
+    .contenedor-items{
+    width: 100% !important;
+    }
+    .carrito{
+        width: 100%;
+    }
+    .widget {
         flex-direction: column;
         align-items: center;
         justify-content: center; }
-      .card {
+    .card {
         margin: 10px;
         width: 200px;
         height: auto; }
-      body{
+    body{
         width: 100%;
         }
-      }
+    }
 
 
 
