@@ -56,49 +56,113 @@
             </nav>
     </header>
 
-    <main>
-        <main>
-            <div class="contenedor">
+    
+        <main>    
+<div class="contenedor">
                 <h1>Periféricos</h1>
-                <div class="productos">
-                    <div class="card col-md-10">
-                        <img src="./IMG/ImagenesCatalogo/redragon kumara.jpg">
-                        <h6>Redragon Kumara 552</h6>
-                        <span>$22.000</span>
-                        <button type="button" class="btn btn-outline-dark">Añadir al carrito</button>
+    <div class="widget">            
+        <div class="productos">
+            <div class="item">
+                    <div class="card col-md-12">
+                        <img src="./IMG/ImagenesCatalogo/redragon kumara.jpg" class="img-item">
+                        <span class="titulo-item">Redragon Kumara 552</span>
+                        <span class="precio-item">$22.000</span>
+                        <button class="boton-item">Agregar al Carrito</button>
                     </div>
-                    <div class="card col-md-10">
-                        <img src="./IMG/imagenesCatalogo/hyperx pulsefire.jpg">
-                        <h6>HyperX Pulsefire Core</h6>
-                        <span>$9.000</span>
-                        <button type="button" class="btn btn-outline-dark">Añadir al carrito</button>
-                    </div>
-                    <div class="card col-md-10">
-                        <img src="./IMG/imagenesCatalogo/teclado 60% nisuta.jpg">
-                        <h6>Nisuta NSKBGZ61 60%</h6>
-                        <span>$17.000</span>
-                        <button type="button" class="btn btn-outline-dark">Añadir al carrito</button>
-                    </div>
-                    <div class="card col-md-10">
-                        <img src="./IMG/Imagenes productos destacados/g203.jpg">
-                        <h6>Mouse logitech G203</h6>
-                        <span>$11.500</span>
-                        <button type="button" class="btn btn-outline-dark">Añadir al carrito</button>
-                    </div>
-                    <div class="card col-md-10">
-                        <img src="./IMG/Imagenes productos destacados/Redragon Zeus.jpg">
-                        <h6>Redragon Zeus</h6>
-                        <span>$26.000</span>
-                        <button type="button" class="btn btn-outline-dark">Añadir al carrito</button>
-                    </div>
-                    <div class="card col-md-10">
-                        <img src="./IMG/imagenesCatalogo/logitech g300s.jpg">
-                        <h6>Mouse Logitech G300s</h6>
-                        <span>$6.500</span>
-                        <button type="button" class="btn btn-outline-dark">Añadir al carrito</button>
-                    </div>
-                </div>
             </div>
+            <div class="item">
+                    <div class="card col-md-12">
+                        <img src="./IMG/imagenesCatalogo/hyperx pulsefire.jpg" class="img-item">
+                        <span class="titulo-item">HyperX Pulsefire Core</span>
+                        <span class="precio-item">$9.000</span>
+                        <button class="boton-item">Agregar al Carrito</button>
+                    </div>
+            </div>
+            <div class="item">
+                    <div class="card col-md-12">
+                        <img src="./IMG/imagenesCatalogo/teclado 60% nisuta.jpg" class="img-item">
+                        <span class="titulo-item">Nisuta NSKBGZ61 60%</span>
+                        <span class="precio-item">$17.000</span>
+                        <button class="boton-item">Agregar al Carrito</button>
+                    </div>
+            </div>
+            <div class="item">
+                    <div class="card col-md-12">
+                        <img src="./IMG/Imagenes productos destacados/g203.jpg" class="img-item">
+                        <span class="titulo-item">Mouse logitech G203</span>
+                        <span class="precio-item">$11.500</span>
+                        <button class="boton-item">Agregar al Carrito</button>
+                    </div>
+            </div>
+            <div class="item">
+                    <div class="card col-md-12">
+                        <img src="./IMG/Imagenes productos destacados/Redragon Zeus.jpg" class="img-item">
+                        <span class="titulo-item">Redragon Zeus</span>
+                        <span class="precio-item">$26.000</span>
+                        <button class="boton-item">Agregar al Carrito</button>
+                    </div>
+            </div>
+            <div class="item">
+                    <div class="card col-md-12">
+                        <img src="./IMG/imagenesCatalogo/logitech g300s.jpg" class="img-item">
+                        <span class="titulo-item">Mouse Logitech G300s</span>
+                        <span class="precio-item">$6.500</span>
+                        <button class="boton-item">Agregar al Carrito</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="widget col-md-12">
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+    
+            <div class="carrito-items">
+                <!-- 
+                <div class="carrito-item">
+                    <img src="img/boxengasse.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Box Engasse</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$15.000,00</span>
+                    </div>
+                   <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </span>
+                </div>
+                <div class="carrito-item">
+                    <img src="img/skinglam.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Skin Glam</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$18.000,00</span>
+                    </div>
+                   <button class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </button>
+                </div>
+                 -->
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        $120.000,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+    </div>
+</div>
     
         </main>
     
