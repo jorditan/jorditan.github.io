@@ -114,19 +114,7 @@ body {
     text-align: center; }
 
 
-
-@media only screen and (max-width: 1200px) {
-    .widget {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center; }
-    .card {
-    margin: 10px;
-    width: 100%;
-    height: auto; } }
-
-
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 1080px) {
     .contenedor {
         display: flex;
         justify-content: center;
@@ -135,7 +123,22 @@ body {
         display: flex;
         flex-direction: column;
         width: 80%;
+        align-items: center;
     }
+}
+
+
+/* CODIGO VALOR DOLAR  */
+.contenedorDolar {
+    height: 100px;
+    width: auto;
+}
+
+.valorDolar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
 }
 
 /* CODIGO CARRITO ABAJO */
@@ -432,16 +435,3 @@ span {
 }
 
 
-
-
-@media only screen and (max-width: 780px) {
-    .contenedor {
-        display: flex;
-        justify-content: center;
-    }
-    .productos{
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-    }
-}
