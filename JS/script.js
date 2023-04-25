@@ -80,7 +80,6 @@ function hacerVisibleCarrito(){
     carrito.style.opacity = '1';
 
     var items =document.getElementsByClassName('contenedor-items')[0];
-    items.style.width = '0%';
 }
 
 
@@ -165,7 +164,6 @@ function ocultarCarrito(){
         carritoVisible = false;
     
         var items =document.getElementsByClassName('contenedor-items')[0];
-        items.style.width = '0';
     }
 }
 
