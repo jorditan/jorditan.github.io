@@ -64,7 +64,7 @@ function hacerVisibleCarrito(){
     carrito.style.opacity = '1';
 
     let items =document.getElementsByClassName('contenedor-items')[0];
-    items.style.width = '60%';
+    items = '60%';
 }
 
 
@@ -149,7 +149,6 @@ function ocultarCarrito(){
         carritoVisible = false;
     
         let items =document.getElementsByClassName('contenedor-items')[0];
-        items.style.width = '0';
     }
 }
 
@@ -172,4 +171,6 @@ function actualizarTotalCarrito(){
     document.getElementsByClassName('carrito-precio-total')[0].innerText = '$'+total.toLocaleString("es") + ",00";
 
 }
+
+
 

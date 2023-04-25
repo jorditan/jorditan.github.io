@@ -134,12 +134,18 @@ body {
     width: auto;
 }
 
+.valorDolar h4 {
+    padding: 10px;
+}
+
 .valorDolar {
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
 }
+
+
 
 /* CODIGO CARRITO ABAJO */
 
