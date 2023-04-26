@@ -102,6 +102,9 @@ formulario.addEventListener('submit', (e) => {
 });
 
 function imprimirValoresConsola() {
-	let comentario = document.getElementById('comentario').value;
-	console.log(comentario);
+	if (campos.usuario && campos.nombre && campos.comentario && campos.correo && campos.telefono && terminos.checked ) {
+		let comentario = document.getElementById('comentario').value;
+		console.log(comentario);
+	}
+
 }
