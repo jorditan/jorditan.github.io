@@ -8,7 +8,7 @@ header {
   margin-left: 30px;
   transition: font-size 2s, background-color 2s; }
 
-.nav-item.nav-item:hover {
+  .nav-item.nav-item:hover {
   background-color: #1d2a27;
   font-size: 20px; }
 
@@ -20,20 +20,19 @@ header {
   background-color: #427064;
   top: 0;
   box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5); 
-}
-
-
+} 
 
 body {
   width: 100%;
+  height: 100vh;
 }
-
 
 main {
   width: 100%;
   float: left;
-  height: max-content;
-  background-color: #1d2a27; }
+  height: auto;
+  background-color: #1d2a27;
+}
 
 .carousel {
   height: 45vh; }
