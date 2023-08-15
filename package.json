@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1", 
+    "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/main.scss css/main.css --outPutStyle expanded",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
@@ -14,5 +14,8 @@
   "dependencies": {
     "node-sass": "^8.0.0",
     "nodemon": "^2.0.22"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
   }
 }

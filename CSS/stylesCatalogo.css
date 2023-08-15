@@ -179,8 +179,7 @@ span {
     position: sticky !important;
     top: 0;
     transition: .3s;
-    display: inline;
-    opacity: 0;
+    display: none;
     background-color: white;
     justify-content: center;
     color: #000;

@@ -61,7 +61,7 @@ function hacerVisibleCarrito(){
     carritoVisible = true;
     let carrito = document.getElementsByClassName('carrito')[0];
     carrito.style.marginRight = '0';
-    carrito.style.opacity = '1';
+    carrito.style.display = 'block';
 
     let items =document.getElementsByClassName('contenedor-items')[0];
     items = '60%';
@@ -145,7 +145,7 @@ function ocultarCarrito(){
     if(carritoItems.childElementCount==0){
         let carrito = document.getElementsByClassName('carrito')[0];
         carrito.style.marginRight = '0';
-        carrito.style.opacity = '0';
+        carrito.style.display = 'none';
         carritoVisible = false;
     
         let items =document.getElementsByClassName('contenedor-items')[0];
